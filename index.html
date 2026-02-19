@@ -1,0 +1,543 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Sulthon Mufti — Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="CSS/variables-base.css">
+    <link rel="stylesheet" href="CSS/cursor.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/intro.css">
+    <link rel="stylesheet" href="CSS/portfolio.css">
+    <link rel="stylesheet" href="CSS/about.css">
+    <link rel="stylesheet" href="CSS/experience.css">
+    <link rel="stylesheet" href="CSS/education.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+</head>
+
+<body>
+    <!-- Custom cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- Background orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <!-- SVG gradient defs -->
+    <svg width="0" height="0" style="position:absolute">
+        <defs>
+            <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#7c3aed" />
+                <stop offset="100%" style="stop-color:#f59e0b" />
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="nav" id="navbar">
+        <a class="brand" href="#">Muhammad Sulthon Mufti</a>
+        <svg class="nav-burger" id="navBurger" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+        </svg>
+        <div class="nav-menu" id="navMenu">
+            <a href="#portfolio">Portfolio</a>
+            <a href="#tentang">About</a>
+            <a href="#pengalaman">Work</a>
+            <a href="#pendidikan">Education</a>
+            <a href="mailto:muhammadsulthonmufti@gmail.com" class="nav-contact-btn">
+                <i class="fa fa-envelope"></i>
+                <span>Contact Me</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- ===== INTRO ===== -->
+    <section class="intro-section">
+        <div class="container">
+            <div class="intro reveal">
+
+                <!-- Kiri: teks -->
+                <div class="intro-left">
+                    <p class="intro-greeting">Welcome to my portfolio</p>
+                    <h1 class="intro-name">
+                        <span class="typed-wrapper"><span class="typed-text" id="typedText"></span><span
+                                class="cursor">|</span></span>
+                    </h1>
+                    <p class="intro-role">Frontend Developer &amp; UI/UX Designer</p>
+                    <p class="intro-summary">
+                        Informatics graduate with <span>2+ years of experience</span> building
+                        web applications and user-centered designs. Proficient in
+                        <span>PHP, JavaScript</span>, and <span>Figma</span> — passionate about
+                        bridging <span>clean code</span> with <span>beautiful interfaces</span>.
+                    </p>
+                    <ul class="social-icons">
+                        <li>
+                            <a href="https://www.linkedin.com/in/muhammad-sulthon-mufti/" title="LinkedIn" target="_blank">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/sulthonmufti" title="GitHub" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:muhammadsulthonmufti@gmail.com" title="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/sulthon2042/" title="Instagram" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        </ul>
+                </div>
+
+                <!-- Kanan: foto -->
+                <div class="intro-right">
+                    <div class="profile-img-wrapper">
+                        <div class="profile-img">
+                            <img src="images/profile.png" alt="Muhammad Sulthon Mufti">
+                        </div>
+                        <!-- Floating badge -->
+                        <div class="intro-badge">
+                            <div class="intro-badge-icon"><i class="fa fa-code"></i></div>
+                            <div class="intro-badge-text">
+                                <strong>2+ Years</strong>
+                                <span>Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Contact info grid di bawah intro -->
+            <div class="header-grid reveal">
+                <div class="header-cell">
+                    <div class="cell-icon"><i class="fa fa-map-marker-alt"></i></div>
+                    <h5>Magelang, Central Java,</h5>
+                    <h5>Indonesia</h5>
+                    <h6>Location</h6>
+                </div>
+                <div class="header-cell">
+                    <div class="cell-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                    <h5>
+                        <a href="https://wa.me/6285726964574" target="_blank">+62 857-2696-4574</a>
+                    </h5>
+                    <h6>WhatsApp</h6>
+                </div>
+                <div class="header-cell">
+                    <div class="cell-icon"><i class="fa fa-envelope"></i></div>
+                    <h5><a href="mailto:muhammadsulthonmufti@gmail.com">muhammadsulthonmufti@gmail.com</a></h5>
+                    <h6>Reply in 24 hours</h6>
+                </div>
+            </div>
+
+            <div style="text-align:center">
+                <a class="download-btn" href="doc/CV - Muhammad Sulthon Mufti.pdf">
+                    <i class="fa fa-download"></i>
+                    <span>Download CV</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== PORTFOLIO ===== -->
+    <section class="portfolio-section section" id="portfolio">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-title-area">
+                    <div class="section-label">My Work</div>
+                    <div class="section-title">Portfolio</div>
+                </div>
+                <div class="section-line"></div>
+            </div>
+            <div class="portfolio-filters reveal">
+                <a href="#" class="current">All</a>
+                <a href="#">UI/UX Design</a>
+                <a href="#">Frontend</a>
+                <a href="#">Web Design</a>
+            </div>
+            <div class="portfolio-grid">
+                <div class="card reveal">
+                    <div class="card-img-wrapper">
+                        <img class="card-img-top" src="img/thumbs/IndonesiaKu.jpg" alt="IndonesiaKu Web Project">
+                        <div class="card-overlay"><a href="https://www.figma.com/proto/DESz2ok3U060SoREC6CpOh/IndonesiaKu---priv?page-id=30%3A2&node-id=133-821&viewport=297%2C203%2C0.07&t=cB2aEDO90jL3ODpE-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=133%3A821" class="btn-primary"><i class="fa fa-eye"></i> View</a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">IndonesiaKu Web Project</h5>
+                        <p class="card-text">The 'IndonesiaKu' project introduces Indonesia's diversity through a
+                            beautifully crafted website.</p>
+                        <p class="card-text"><small>Updated recently</small></p>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="card-img-wrapper">
+                        <img class="card-img-top" src="img/thumbs/bakpia.jpg" alt="Online Store Ordering Website">
+                        <div class="card-overlay"><a href="https://github.com/robyskywalker25/MPTI_fasuharofiz" class="btn-primary"><i class="fa fa-eye"></i> View</a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Online Store Ordering Website</h5>
+                        <p class="card-text">Developed an online ordering system for MSMEs to receive customer orders
+                            digitally.</p>
+                        <p class="card-text"><small>Updated recently</small></p>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="card-img-wrapper">
+                        <img class="card-img-top" src="img/thumbs/TravelPath.jpg" alt="Travel Planning Mobile Apps">
+                        <div class="card-overlay"><a href="https://www.figma.com/proto/bzFHkiysGrV6MHxMlMG2gf/booking-jasa?page-id=113%3A2290&node-id=128-1394&viewport=641%2C408%2C0.23&t=Hw60Vzm7NL40EGQ6-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=128%3A1394" class="btn-primary"><i class="fa fa-eye"></i> View</a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">TravelPath - Travel Planning Mobile Apps</h5>
+                        <p class="card-text">Designed and developed the TravelPath mobile application for seamless
+                            travel planning.</p>
+                        <p class="card-text"><small>Updated recently</small></p>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="card-img-wrapper">
+                        <img class="card-img-top" src="img/thumbs/BlindO.jpg" alt="BlindO - Mobile Apps Design">
+                        <div class="card-overlay"><a href="https://www.figma.com/proto/g7st7mHSaxhCm68qMjo7Ik/BlindO?page-id=0%3A1&node-id=2-2&viewport=271%2C200%2C0.26&t=B0HujqAUiV6UYfB7-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=2%3A2" class="btn-primary"><i class="fa fa-eye"></i> View</a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">BlindO - Mobile Apps Design</h5>
+                        <p class="card-text">Created a compelling landing page to promote the BlindO accessibility
+                            application.</p>
+                        <p class="card-text"><small>Updated recently</small></p>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="card-img-wrapper">
+                        <img class="card-img-top" src="img/thumbs/Galeri.png" alt="Tourism Geographic Information System">
+                        <div class="card-overlay"><a href="https://www.figma.com/proto/W6CNAf1XlbHcsSAlehJ29A/SKRIPSI?page-id=&node-id=5-996&starting-point-node-id=5%3A996&scaling=scale-down-width&content-scaling=fixed&t=NQiPiFvae9jJjHYc-1" class="btn-primary"><i class="fa fa-eye"></i> View</a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Tourism Geographic Information System</h5>
+                        <p class="card-text">Developing a high-performance GIS platform that maps more than 150 tourist destinations for the Magelang Regency area.</p>
+                        <p class="card-text"><small>Updated recently</small></p>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="card-img-wrapper">
+                        <img class="card-img-top" src="img/thumbs/Dashboard-PGTK.png" alt="PGTK - New Student Admissons Web">
+                        <div class="card-overlay"><a href="https://www.figma.com/proto/iaXcqLSz06dkV9hHDD2whk/Dashboard-PGTK-Bani-Harun---Muhammad-Sulthon-Mufti?page-id=0%3A1&node-id=61-3069&scaling=scale-down-width&content-scaling=fixed&t=Pa42qqtxon44jG4S-1" class="btn-primary"><i class="fa fa-eye"></i> View</a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">PGTK - New Student Admissons Web</h5>
+                        <p class="card-text">Designing web for promotions and new student admissions to introduce the school environment to perspective student.</p>
+                        <p class="card-text"><small>Updated recently</small></p>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="card-img-wrapper">
+                        <img class="card-img-top" src="img/thumbs/sebarrin.png" alt="">
+                        <div class="card-overlay"><a href="https://www.figma.com/proto/LWnmyWsLjMzaICp7swTizm/Online-Invitation?page-id=103%3A904&node-id=104-3906&viewport=904%2C1286%2C0.04&t=Hu04rToQoIK09oij-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=104%3A3884" class="btn-primary"><i class="fa fa-eye"></i> View</a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Sebarr.in - Digital invitation platform</h5>
+                        <p class="card-text">Sebarr.in is an online invitation platform that allows users to easily create unique and personalized digital invitations. With a variety of customizable templates, users can create invitations that match their event theme.</p>
+                        <p class="card-text"><small>Updated recently</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about-section section" id="tentang">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-title-area">
+                    <div class="section-label">Professional Path</div>
+                    <div class="section-title">About Me</div>
+                </div>
+                <div class="section-line"></div>
+            </div>
+            <div class="two-col">
+                <div></div>
+                <div>
+                    <div class="about-text reveal">
+                        <p>I'm an Informatics graduate from Ahmad Dahlan University with a GPA of 3.62 and two years
+                            of experience in web development. My skills include HTML, CSS, JavaScript, PHP, and MySQL.
+                            I've been trusted to hold front-end developer roles on several university projects.</p>
+                        <p>In addition to web development, I'm proficient in UI/UX design and skilled in design tools
+                            like Figma—skilled in project implementation, prototyping, and effective communication.</p>
+                    </div>
+                    <div class="skills-grid reveal">
+                        <div class="skill-item" data-skill="95">
+                            <div class="skill-ring">
+                                <svg viewBox="0 0 80 80">
+                                    <circle class="skill-ring-bg" cx="40" cy="40" r="35" />
+                                    <circle class="skill-ring-fill" cx="40" cy="40" r="35" />
+                                </svg>
+                                <div class="skill-pct">95%</div>
+                            </div>
+                            <div class="skill-name">HTML</div>
+                        </div>
+                        <div class="skill-item" data-skill="79">
+                            <div class="skill-ring">
+                                <svg viewBox="0 0 80 80">
+                                    <circle class="skill-ring-bg" cx="40" cy="40" r="35" />
+                                    <circle class="skill-ring-fill" cx="40" cy="40" r="35" />
+                                </svg>
+                                <div class="skill-pct">79%</div>
+                            </div>
+                            <div class="skill-name">CSS</div>
+                        </div>
+                        <div class="skill-item" data-skill="68">
+                            <div class="skill-ring">
+                                <svg viewBox="0 0 80 80">
+                                    <circle class="skill-ring-bg" cx="40" cy="40" r="35" />
+                                    <circle class="skill-ring-fill" cx="40" cy="40" r="35" />
+                                </svg>
+                                <div class="skill-pct">68%</div>
+                            </div>
+                            <div class="skill-name">JS</div>
+                        </div>
+                        <div class="skill-item" data-skill="60">
+                            <div class="skill-ring">
+                                <svg viewBox="0 0 80 80">
+                                    <circle class="skill-ring-bg" cx="40" cy="40" r="35" />
+                                    <circle class="skill-ring-fill" cx="40" cy="40" r="35" />
+                                </svg>
+                                <div class="skill-pct">60%</div>
+                            </div>
+                            <div class="skill-name">PHP</div>
+                        </div>
+                        <div class="skill-item" data-skill="80">
+                            <div class="skill-ring">
+                                <svg viewBox="0 0 80 80">
+                                    <circle class="skill-ring-bg" cx="40" cy="40" r="35" />
+                                    <circle class="skill-ring-fill" cx="40" cy="40" r="35" />
+                                </svg>
+                                <div class="skill-pct">80%</div>
+                            </div>
+                            <div class="skill-name">MySQL</div>
+                        </div>
+                        <div class="skill-item" data-skill="95">
+                            <div class="skill-ring">
+                                <svg viewBox="0 0 80 80">
+                                    <circle class="skill-ring-bg" cx="40" cy="40" r="35" />
+                                    <circle class="skill-ring-fill" cx="40" cy="40" r="35" />
+                                </svg>
+                                <div class="skill-pct">95%</div>
+                            </div>
+                            <div class="skill-name">Figma</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section class="experience-section section" id="pengalaman">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-title-area">
+                    <div class="section-label">Projects</div>
+                    <div class="section-title">Experience</div>
+                </div>
+                <div class="section-line"></div>
+            </div>
+            <div class="two-col">
+                <div></div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="exp-card">
+                            <div class="exp-title">Full Stack Developer - Geographic Information System Development</div>
+                            <div class="exp-company">Dinas Pariwisata Kabupaten Magelang (Magelang Regency Tourism Office)</div>
+                            <div class="exp-date">February 2025 - September 2025 · Magelang</div> 
+                            <div class="exp-desc">Engineered a high-performance GIS platform that mapped over 150+ tourism destinations.</div>
+                            <ul class="exp-list">
+                                <li>Designed and prototyped 20+ interactive UI screens in Figma, resulting in a 25% improvement in user navigation efficiency during usabilitytesting.</li>
+                                <li>Integrated a dynamic geospatial layering system that allows real-time filtering of 5+ categories (e.g., nature, culinary, culture), enhancinginformation discovery for users.</li>
+                                <li>Validated the platform's user experience through standardized usability testing, achieving a usability score of 80.42 (Grade A) to deliver a highlyintuitive and user-friendly interface for diverse visitors.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="exp-card">
+                            <div class="exp-title">UI/UX Designer — Internship</div>
+                            <div class="exp-company">Kawan Kerja Indonesia</div>
+                            <div class="exp-date">July 2024 – November 2024 · Bandung</div>
+                            <div class="exp-desc">Created UI/UX designs focusing on usability and aesthetics,
+                                collaborating with the team on innovative features.</div>
+                            <ul class="exp-list">
+                                <li>Spearheaded the end-to-end design and development of 5 major software projects, collaborating with cross-functional teams of 3–5 roles to achieve over 1,000 successful downloads.</li>
+                                <li>Successfully produced website and mobile designs as reference materials during the application development process. Refined user interfacecomponents for both web and mobile platforms by integrating user feedback and usability testing outcomes, elevating product appeal andusability across multiple projects.</li>
+                                <li>Figma, Collaboration, Teamwork, Presentation, Communication</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="exp-card">
+                            <div class="exp-title">Frontend Developer & UI/UX Designer — IT Project Management</div>
+                            <div class="exp-company">Ahmad Dahlan University</div>
+                            <div class="exp-date">March 2024 – June 2024 · Yogyakarta</div>
+                            <div class="exp-desc">Built a food delivery system collaborating with clients for
+                                requirements gathering and feature development.</div>
+                            <ul class="exp-list">
+                                <li>Collaborate to determine UI/UX designs compliant with client agreements</li>
+                                <li>HTML, CSS, JavaScript, PHP, Figma, Collaboration, Teamwork</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="exp-card">
+                            <div class="exp-title">Introduction Project Management and Principles</div>
+                            <div class="exp-company">Ahmad Dahlan University</div>
+                            <div class="exp-date">September 2023 – January 2024 · Yogyakarta</div>
+                            <div class="exp-desc">Analyzing needs in system development including functional and
+                                non-functional requirements, required features, and designing interface approved by the
+                                client.</div>
+                            <ul class="exp-list">
+                                <li>Designing UI/UX suited to the users of the system to be developed</li>
+                                <li>Systems Analysis, Visual Design, Communication, Teamwork</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="exp-card">
+                            <div class="exp-title">UI/UX Designer — Human-Computer Interaction</div>
+                            <div class="exp-company">Ahmad Dahlan University</div>
+                            <div class="exp-date">March 2023 – July 2023 · Yogyakarta</div>
+                            <div class="exp-desc">Created interface designs focusing on visual and interactive aspects
+                                using design principles and color theory.</div>
+                            <ul class="exp-list">
+                                <li>Figma, Visual Design, Typography, Color Theory, Wireframes</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="exp-card">
+                            <div class="exp-title">Software Analysis and Design</div>
+                            <div class="exp-company">Ahmad Dahlan University</div>
+                            <div class="exp-date">March 2023 – July 2023 · Yogyakarta</div>
+                            <div class="exp-desc">Analyzed requirements for a product delivery expedition system in
+                                collaboration with clients.</div>
+                            <ul class="exp-list">
+                                <li>Determined UI/UX design for the developed system</li>
+                                <li>Systems Analysis, Visual Design, Communication, Teamwork</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="exp-card">
+                            <div class="exp-title">Programmer & UX Designer — Data Structure Management</div>
+                            <div class="exp-company">Ahmad Dahlan University</div>
+                            <div class="exp-date">September 2022 – January 2023 · Yogyakarta</div>
+                            <div class="exp-desc">Built a school financial management system allowing admins to track
+                                and record finances.</div>
+                            <ul class="exp-list">
+                                <li>Team Leader managing design and development workflow</li>
+                                <li>C++, Visual Design, System Analysis, Data Processing</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="exp-card">
+                            <div class="exp-title">Programmer & UX Designer — Design and Programming Algorithms</div>
+                            <div class="exp-company">Ahmad Dahlan University</div>
+                            <div class="exp-date">March 2022 – July 2022 · Yogyakarta</div>
+                            <div class="exp-desc">Created a student data collection system, implementing programming
+                                algorithms into a usable product.</div>
+                            <ul class="exp-list">
+                                <li>Designed UX suited to user needs for the system</li>
+                                <li>C++, Visual Design, Data Processing, Teamwork, Presentation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section class="education-section section" id="pendidikan">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-title-area">
+                    <div class="section-label">Academic Career</div>
+                    <div class="section-title">Education</div>
+                </div>
+                <div class="section-line"></div>
+            </div>
+            <div class="edu-grid">
+                <div class="edu-card reveal">
+                    <div class="edu-badge"><i class="fa fa-university"></i></div>
+                    <div class="edu-level">University</div>
+                    <div class="edu-school">Ahmad Dahlan University</div>
+                    <div class="edu-year">Graduated 2025 · 3 Years</div>
+                    <div class="edu-desc">Informatics Engineering with a focus on software and website development.
+                    </div>
+                </div>
+                <div class="edu-card reveal">
+                    <div class="edu-badge"><i class="fa fa-graduation-cap"></i></div>
+                    <div class="edu-level">Senior High School</div>
+                    <div class="edu-school">Muhammadiyah 1 Muntilan Senior High School</div>
+                    <div class="edu-year">Graduated 2021 · 3 Years</div>
+                    <div class="edu-desc">Took additional course classes as a computer technician for 2 years.</div>
+                </div>
+                <div class="edu-card reveal">
+                    <div class="edu-badge"><i class="fa fa-book"></i></div>
+                    <div class="edu-level">Junior High School</div>
+                    <div class="edu-school">Muhammadiyah 1 Muntilan Junior High School</div>
+                    <div class="edu-year">Graduated 2018 · 3 Years</div>
+                    <div class="edu-desc">3 consecutive years in the excellent class program.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p class="copyright">Copyright &copy; <span id="year"></span> Muhammad Sulthon Mufti. All rights reserved.</p>
+    </footer>
+
+    <!-- Scroll to top -->
+    <button class="scroll-top" id="scrollTop"><i class="fa fa-chevron-up"></i></button>
+
+    <script src="JS/custom-cursor.js"></script>
+    <script src="JS/typed-text.js"></script>
+    <script src="JS/navbar-scroll.js"></script>
+    <script src="JS/burgerMenu-scrollToTop-year.js"></script>
+    <script src="JS/intersection-observer.js"></script>
+    <script src="JS/skill-rings.js"></script>
+    <script src="JS/porto-filter-active-state.js"></script>
+    <script src="JS/stagger-reveal-for-card.js"></script>
+
+</body>
+
+</html>

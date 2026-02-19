@@ -1,0 +1,24 @@
+.cursor-dot {
+  width: 8px; height: 8px;
+  background: var(--purple-glow);
+  border-radius: 50%;
+  position: fixed; top: 0; left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.1s;
+}
+
+.cursor-ring {
+  width: 36px; height: 36px;
+  border: 1.5px solid rgba(168,85,247,0.6);
+  border-radius: 50%;
+  position: fixed; top: 0; left: 0;
+  pointer-events: none;
+  z-index: 9998;
+  transition: transform 0.15s, width 0.3s, height 0.3s, border-color 0.3s;
+}
+
+.cursor-ring.hovered {
+  width: 56px; height: 56px;
+  border-color: var(--yellow-accent);
+}
